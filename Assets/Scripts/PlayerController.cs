@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private Rigidbody2D _rb;
     private Vector2 _currentPosition;
     private float _inputVertical;
     private float _inputHorizontal;
-    private float _moveSpeed = 5f;
+    private Vector2 _totalVelocity;
+    private float _moveSpeed = 10f;
     private float _speedLimiter = 0.7f;
-    private float _totalSpeedY;
-    private float _totalSpeedX;
 
     private Camera _mainCamera;
     private Vector2 _mousePosition;
@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        _rb = GetComponent<Rigidbody2D>();
         _mainCamera = Camera.main;
     }
     
@@ -27,43 +28,46 @@ public class PlayerController : MonoBehaviour
     {
         _currentPosition = transform.position;
         
-        MovePlayer();
-        RotatePlayer();
-    }
-
-    void MovePlayer()
-    {
+        // Movement details
         _inputVertical = Input.GetAxisRaw("Vertical");
         _inputHorizontal = Input.GetAxisRaw("Horizontal");
-        _totalSpeedY = _inputVertical * _moveSpeed * Time.deltaTime;
-        _totalSpeedX = _inputHorizontal * _moveSpeed * Time.deltaTime;
-        
-        // Reducing the excess diagonal speed
-        if (_inputVertical != 0 && _inputHorizontal != 0)
-        {
-            _currentPosition = new Vector2(_currentPosition.x + _totalSpeedX * _speedLimiter, _currentPosition.y + _totalSpeedY * _speedLimiter);
-        }
-        else if (_inputVertical != 0)
-        {
-            _currentPosition = new Vector2(_currentPosition.x, _currentPosition.y + _totalSpeedY);
-        }
-        else if (_inputHorizontal != 0)
-        {
-            _currentPosition = new Vector2(_currentPosition.x + _totalSpeedX, _currentPosition.y);
-        }
 
-        transform.position = _currentPosition;
-    }
-
-    void RotatePlayer()
-    {
+        // Rotation details
         _mousePosition = Input.mousePosition;
-        
         // Converting mouse's screen point to world point because here, screen size != world size
         Vector3 worldPoint = _mainCamera.ScreenToWorldPoint(new Vector2(_mousePosition.x, _mousePosition.y));
         _offset = new Vector2(worldPoint.x - _currentPosition.x, worldPoint.y - _currentPosition.y).normalized;
         _rotateAngle = MathF.Atan2(_offset.y, _offset.x) * Mathf.Rad2Deg;
         
+        RotatePlayer();
+    }
+
+    private void FixedUpdate()
+    {
+        MovePlayer();
+    }
+
+    void MovePlayer()
+    {
+        _totalVelocity = new Vector2(_inputHorizontal, _inputVertical) * _moveSpeed;
+        
+        if (_inputVertical != 0 || _inputHorizontal != 0)
+        {
+            if (_inputVertical != 0 && _inputHorizontal != 0)
+            {
+                _totalVelocity *= _speedLimiter;
+            }
+            
+            _rb.MovePosition(_rb.position + _totalVelocity * Time.fixedDeltaTime);
+        }
+        else
+        {
+            _rb.velocity = new Vector2(0, 0);
+        }
+    }
+
+    void RotatePlayer()
+    {
         transform.rotation = Quaternion.Euler(0f, 0f, _rotateAngle - 90f);
     }
 }
