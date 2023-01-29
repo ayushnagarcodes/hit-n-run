@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 1086329691}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -923,6 +923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1366312420}
   - component: {fileID: 1366312421}
+  - component: {fileID: 1366312422}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -938,7 +939,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366312419}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.819095, y: -0.3011492, z: -10.041753}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -958,3 +959,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 6691575031432292899, guid: 758d20c328c71944c9bb195a4bf098e4, type: 3}
+--- !u!114 &1366312422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366312419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa404d35a454c5b9ebe2c1e941178c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 7110628519568463397, guid: ea3b9f6051faf994eb88a0935a8d9b5a, type: 3}
