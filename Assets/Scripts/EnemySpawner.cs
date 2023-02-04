@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemy;
     private Camera _mainCamera;
-    private Vector3[] _spawnPositions;
+    private Vector2 _spawnPosition;
     private float _spawnTime = 2f;
 
     private void Start()
@@ -19,17 +19,24 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(Spawn());
     }
 
+    void GenerateSpawnPos()
+    {
+        // Converting spawn position to viewport view
+        _spawnPosition =
+            _mainCamera.WorldToViewportPoint(new Vector2(Random.Range(-12.5f, 12.5f), Random.Range(-12.5f, 12.5f)));
+    }
+
     IEnumerator Spawn()
     {
-        _spawnPositions = new Vector3[] {
-            new Vector3(Random.Range(-0.3f, -0.1f), Random.Range(-0.1f, 1.1f), _mainCamera.nearClipPlane),
-            new Vector3(Random.Range(1.1f, 1.3f), Random.Range(-0.1f, 1.1f), _mainCamera.nearClipPlane),
-            new Vector3(Random.Range(-0.1f, 1.1f), Random.Range(-0.3f, -0.1f), _mainCamera.nearClipPlane),
-            new Vector3(Random.Range(-0.1f, 1.1f), Random.Range(1.1f, 1.3f), _mainCamera.nearClipPlane)
-        };
+        GenerateSpawnPos();
+        // If the generated position is in the camera view, then regenerating the position until it is out of the camera view
+        while (_spawnPosition.x > 0 && _spawnPosition.x < 1 && _spawnPosition.y > 0 && _spawnPosition.y < 1)
+        {
+            GenerateSpawnPos();
+        }
         
-        GameObject prefab = Instantiate(enemy, _mainCamera.ViewportToWorldPoint(_spawnPositions[Random.Range(0, _spawnPositions.Length)]),
-            Quaternion.identity);
+        // Converting spawn position back to world view
+        GameObject prefab = Instantiate(enemy, _mainCamera.ViewportToWorldPoint(_spawnPosition), Quaternion.identity);
 
         yield return new WaitForSeconds(_spawnTime);
         

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 133904546}
   - component: {fileID: 133904545}
   m_Layer: 0
-  m_Name: Border (2)
+  m_Name: Border (1)
   m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,7 +232,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148367237
 GameObject:
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 148367239}
   - component: {fileID: 148367238}
   m_Layer: 0
-  m_Name: Border (4)
+  m_Name: Border (3)
   m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,7 +343,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &298015271
 GameObject:
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 298015272}
   - component: {fileID: 298015274}
   m_Layer: 0
-  m_Name: Border (1)
+  m_Name: Border (4)
   m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,7 +428,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &298015274
 BoxCollider2D:
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 1217595202}
   - component: {fileID: 1217595201}
   m_Layer: 0
-  m_Name: Border (3)
+  m_Name: Border (2)
   m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -911,7 +911,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366312419
 GameObject:
