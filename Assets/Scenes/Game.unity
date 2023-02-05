@@ -483,7 +483,7 @@ Transform:
   m_GameObject: {fileID: 323877285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.42, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.53, z: 1}
+  m_LocalScale: {x: 0.51, y: 0.64, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1086329688}
@@ -621,7 +621,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -765,6 +765,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8caac1e7aa4923748b10f88d6a7913e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shotgun: {fileID: 323877286}
+  bullet: {fileID: 2477850643893831716, guid: e56f13456cd71084cb5dccee7f9b0ee4, type: 3}
 --- !u!50 &1086329692
 Rigidbody2D:
   serializedVersion: 4
@@ -924,6 +926,7 @@ GameObject:
   - component: {fileID: 1366312420}
   - component: {fileID: 1366312421}
   - component: {fileID: 1366312422}
+  - component: {fileID: 1366312423}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -972,3 +975,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7110628519568463397, guid: ea3b9f6051faf994eb88a0935a8d9b5a, type: 3}
+--- !u!114 &1366312423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366312419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c2b35b04ebc734aba7891912866693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

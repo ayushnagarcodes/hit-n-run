@@ -10,13 +10,18 @@ public class PlayerController : MonoBehaviour
     private float _inputVertical;
     private float _inputHorizontal;
     private Vector2 _totalVelocity;
-    private float _moveSpeed = 10f;
+    private float _moveSpeed = 8f;
     private float _speedLimiter = 0.7f;
 
     private Camera _mainCamera;
     private Vector2 _mousePosition;
     private Vector2 _offset;
     private float _rotateAngle;
+              
+    [SerializeField] private Transform shotgun;
+    [SerializeField] private GameObject bullet;
+    private Vector2 _bulletVelocity;                     
+    private float _bulletSpeed = 10f;
 
     void Start()
     {
@@ -35,11 +40,12 @@ public class PlayerController : MonoBehaviour
         // Rotation details
         _mousePosition = Input.mousePosition;
         // Converting mouse's screen point to world point because here, screen size != world size
-        Vector3 worldPoint = _mainCamera.ScreenToWorldPoint(new Vector2(_mousePosition.x, _mousePosition.y));
+        Vector2 worldPoint = _mainCamera.ScreenToWorldPoint(new Vector2(_mousePosition.x, _mousePosition.y));
         _offset = new Vector2(worldPoint.x - _currentPosition.x, worldPoint.y - _currentPosition.y).normalized;
         _rotateAngle = MathF.Atan2(_offset.y, _offset.x) * Mathf.Rad2Deg;
         
         RotatePlayer();
+        Fire();
     }
 
     private void FixedUpdate()
@@ -69,5 +75,14 @@ public class PlayerController : MonoBehaviour
     void RotatePlayer()
     {
         transform.rotation = Quaternion.Euler(0f, 0f, _rotateAngle - 90f);
+    }
+
+    void Fire()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject obj = Instantiate(bullet, shotgun.position, Quaternion.identity);
+            obj.GetComponent<Rigidbody2D>().velocity = _offset * _bulletSpeed;
+        }
     }
 }

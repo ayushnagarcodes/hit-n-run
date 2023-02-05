@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemy;
     private Camera _mainCamera;
-    private Vector2 _spawnPosition;
+    private Vector3 _spawnPosition;
     private float _spawnTime = 2f;
 
     private void Start()
@@ -23,14 +23,15 @@ public class EnemySpawner : MonoBehaviour
     {
         // Converting spawn position to viewport view
         _spawnPosition =
-            _mainCamera.WorldToViewportPoint(new Vector2(Random.Range(-12.5f, 12.5f), Random.Range(-12.5f, 12.5f)));
+            _mainCamera.WorldToViewportPoint(new Vector3(Random.Range(-12.5f, 12.5f), Random.Range(-12.5f, 12.5f), 0f));
     }
 
     IEnumerator Spawn()
     {
         GenerateSpawnPos();
         // If the generated position is in the camera view, then regenerating the position until it is out of the camera view
-        while (_spawnPosition.x > 0 && _spawnPosition.x < 1 && _spawnPosition.y > 0 && _spawnPosition.y < 1)
+        // Also, keeping in mind the scale of the enemy, so, increasing the check window
+        while (_spawnPosition.x > -0.1f && _spawnPosition.x < 1.1f && _spawnPosition.y > -0.1f && _spawnPosition.y < 1.1f)
         {
             GenerateSpawnPos();
         }
