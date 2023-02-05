@@ -8,14 +8,18 @@ using Random = UnityEngine.Random;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemy;
+
     private Camera _mainCamera;
     private Vector3 _spawnPosition;
     private float _spawnTime = 2f;
+    
+    private int _gameLevel = 1;
 
     private void Start()
     {
         _mainCamera = Camera.main;
-
+        
+        StartCoroutine(IncreaseDifficulty());
         StartCoroutine(Spawn());
     }
 
@@ -37,10 +41,18 @@ public class EnemySpawner : MonoBehaviour
         }
         
         // Converting spawn position back to world view
-        GameObject prefab = Instantiate(enemy, _mainCamera.ViewportToWorldPoint(_spawnPosition), Quaternion.identity);
+        GameObject obj = Instantiate(enemy, _mainCamera.ViewportToWorldPoint(_spawnPosition), Quaternion.identity);
+        obj.GetComponent<EnemyBehavior>().temp = _gameLevel - 1;
 
         yield return new WaitForSeconds(_spawnTime);
         
         StartCoroutine(Spawn());
+    }
+
+    IEnumerator IncreaseDifficulty()
+    {
+        yield return new WaitForSeconds(5f);
+        _gameLevel++;
+        StartCoroutine(IncreaseDifficulty());
     }
 }
