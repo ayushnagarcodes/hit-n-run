@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ScoreManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     [SerializeField] Text score;
     public int gameLevel;
@@ -22,6 +23,15 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         score.text = points.ToString();
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Game");
+        }
+        else if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
     }
     
     IEnumerator IncreaseDifficulty()

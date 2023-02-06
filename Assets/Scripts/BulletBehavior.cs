@@ -7,11 +7,11 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class BulletBehavior : MonoBehaviour
 {
-    private ScoreManager _scoreManager;
+    private GameManager _gameManager;
 
     private void Start()
     {
-        _scoreManager = GameObject.FindWithTag("GameController").GetComponent<ScoreManager>();
+        _gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,7 +24,13 @@ public class BulletBehavior : MonoBehaviour
         {
             int temp2 = collision.gameObject.GetComponent<EnemyBehavior>().temp;
             Destroy(collision.gameObject);
-            _scoreManager.points += (300 + 50 * temp2);
+            
+            _gameManager.points += (300 + 50 * temp2);
+            if (_gameManager.points > PlayerPrefs.GetInt("highScore"))
+            {
+                PlayerPrefs.SetInt("highScore", _gameManager.points);
+            }
+            
             Destroy(gameObject);
         }
     }
