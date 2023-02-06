@@ -24,7 +24,8 @@ public class EnemyBehavior : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _enemyRenderer = GetComponent<SpriteRenderer>();
         _green = _enemyRenderer.color.g;
-        
+        temp = GameObject.FindWithTag("GameController").GetComponent<ScoreManager>().gameLevel - 1;
+
         // Changing color
         _enemyRenderer.color = new Color(1, _green - 0.1f * temp, 0);
 

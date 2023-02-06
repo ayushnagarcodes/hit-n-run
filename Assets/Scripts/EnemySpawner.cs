@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
@@ -12,14 +13,11 @@ public class EnemySpawner : MonoBehaviour
     private Camera _mainCamera;
     private Vector3 _spawnPosition;
     private float _spawnTime = 2f;
-    
-    private int _gameLevel = 1;
 
     private void Start()
     {
         _mainCamera = Camera.main;
-        
-        StartCoroutine(IncreaseDifficulty());
+
         StartCoroutine(Spawn());
     }
 
@@ -42,17 +40,9 @@ public class EnemySpawner : MonoBehaviour
         
         // Converting spawn position back to world view
         GameObject obj = Instantiate(enemy, _mainCamera.ViewportToWorldPoint(_spawnPosition), Quaternion.identity);
-        obj.GetComponent<EnemyBehavior>().temp = _gameLevel - 1;
 
         yield return new WaitForSeconds(_spawnTime);
         
         StartCoroutine(Spawn());
-    }
-
-    IEnumerator IncreaseDifficulty()
-    {
-        yield return new WaitForSeconds(5f);
-        _gameLevel++;
-        StartCoroutine(IncreaseDifficulty());
     }
 }

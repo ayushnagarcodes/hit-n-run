@@ -2,18 +2,29 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class BulletBehavior : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collider)
+    private ScoreManager _scoreManager;
+
+    private void Start()
     {
-        if (collider.gameObject.CompareTag("Obstacle") || collider.gameObject.CompareTag("Border"))
+        _scoreManager = GameObject.FindWithTag("GameController").GetComponent<ScoreManager>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Border"))
         {
             Destroy(gameObject);
-        } 
-        else if (collider.gameObject.CompareTag("Enemy"))
+        }
+        else if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collider.gameObject);
+            int temp2 = collision.gameObject.GetComponent<EnemyBehavior>().temp;
+            Destroy(collision.gameObject);
+            _scoreManager.points += (300 + 50 * temp2);
             Destroy(gameObject);
         }
     }
