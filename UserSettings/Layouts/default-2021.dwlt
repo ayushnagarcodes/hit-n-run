@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Check
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 13179
+  controlID: 29056
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 13180
+  controlID: 29046
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 13181
+  controlID: 29027
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 13134
+  controlID: 29047
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,7 +304,7 @@ MonoBehaviour:
   - {fileID: 22}
   - {fileID: 23}
   m_Selected: 3
-  m_LastSelected: 4
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -331,7 +331,7 @@ MonoBehaviour:
   - {fileID: 24}
   - {fileID: 25}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 1
+  m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -544,7 +544,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -704,9 +704,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.3233487, y: -4.8138, z: -0.11014218}
+    m_Target: {x: -6.5292454, y: -1.4782403, z: -0.16384137}
     speed: 2
-    m_Value: {x: -0.3233487, y: -4.8138, z: -0.11014218}
+    m_Value: {x: -6.5292454, y: -1.4782403, z: -0.16384137}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -757,9 +757,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.671754
+    m_Target: 19.925798
     speed: 2
-    m_Value: 14.671754
+    m_Value: 19.925798
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -806,7 +806,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 930.2
+    width: 922.2
     height: 427.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -860,9 +860,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 880cffff
-      m_LastClickedID: -62328
-      m_ExpandedIDs: 620dffff9c0dffff6a12ffffae12fffff012ffffa218ffffcc18ffff0619ffff021effff1824ffff5224ffff5029ffffc42bffff062cffff8632ffffb232fffff432ffffca38fffff438ffff2e39ffff2c3effffaa42ffffe442ffffca47ffffea49ffff244affff004fffff4251ffff7c51ffffce56ffffda58ffff1459ffff065effff325effff745effff7064ffffb469fffff669ffff626fffff7c7bffffbe7bffff4281ffffd882ffff1a83ffffe488ffff1089ffff5289ffffec8effff188fffff5a8fffffea94ffff7696ffffb096fffff69bffff86dffffff6dfffff28fbffffe4520000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e842fdff2243fdfff849fdff9a4afdffd44afdffac51fdff5052fdff8a52fdffce59fdff725afdffac5afdffd661fdff7862fdffb262fdfff469fdffa06afdffd46afdff966cfdffc06cfdfffa6cfdff3c74fdff6c86fdffa686fdff7c8dfdff7493fdffa893fdffb69afdffb69cfdffea9cfdff8ca3fdff84a6fdffb8a6fdff5aadfdffeeadfdff22aefdff1ab5fdffaeb5fdffe2b5fdffa4b7fdffc8b7fdfffcb7fdffbeb9fdffe2b9fdff16bafdffd8bbfdfffcbbfdff30bcfdff3ebdfdff62bdfdff96bdfdffa4befdffc8befdfffcbefdff3ec0fdff62c0fdff96c0fdffc4c2fdffeec2fdff28c3fdff52cafdff7ccafdffb6cafdff4cd2fdff9ad5fdffd4d5fdffaadcfdff44dffdff78dffdff1ae6fdffaee6fdffe2e6fdff16eefdff46eefdff7aeefdff3cf0fdffecf0fdff20f1fdffe2f2fdff06f3fdff3af3fdfffcf4fdff20f5fdff54f5fdff40fcfdff64fcfdff98fcfdff4603feff6a03feff9e03feff400afeffd60afeff0a0bfeffac11feffd011feff0412feffc613fefff013feff2a14feff001bfeff222dfeff5c2dfeff3e34feff6834feffa234feff7a3bfeff9e3cfeffd23cfefffa43feff9444feffce44feff644cfeffe84efeff224ffeff4c56feff4a57feff8457feffae5efeffac63feffe663feff106bfeff7c6cfeffb66cfeff4c74feff1075feff4a75feff747cfeff1c87feff5087feffea8dfeffb08efeffea8efeff0496feff9296feffcc96feffe69dfeffea9efeff1e9ffeffc0a5feffeaa5feff24a6feff30abfeff5aabfeff94abfeff6ab2feff94b2feffceb2feffa4b9feffceb9feff08bafeff14bffeffc6bffeff00c0feff2ac7feff54c7feff8ec7feffb8cefeff68d0feff9cd0feff0ad8feff2ed8feff62d8feff4edffeff6ce0feffa0e0feff8ce7feffb0e7feffe4e7feff10edfeff34edfeff68edfeff94f2feffb8f2feffecf2feffd8f9feff50fefeff8afefeffe4fffeff0a00ffff4400ffffbe02ffffe402ffff1e03ffff2a05ffff5005ffff8a05ffffe206ffff0e07ffff4807ffff620effff2e10ffff7810ffff0218ffff4418ffff8e18ffff3020ffff8624ffffd024ffff122cffff522cffff9c2cffffea33ffffb235fffffa35ffff7a36fffff236ffff3c37ffff563fffff2040ffff6a40ffff0c48ffff4c48ffff9648ffff3850ffff0451ffff4e51fffff058ffff3459ffff7e59ffff1461ffff9862ffffe262ffffe46affff2a6bffff746bffff8273ffffc273ffff0c74ffffae7bffffea7cffff347dffff3685fffffc85ffff4686ffff948dffff129affff5c9affffa0a1ffffa4a2ffffeea2fffffcaaffff42abffff8cabffff8eb3ffffceb3ffff18b4ffffb0bbffffa2beffffe8beffff6ac6ffffbac9ffff00caffff82d1ffff04dbffff3cdeffff86deffffeae5ffff52eaffff8ceaffffaef1ffff20fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -940,9 +940,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 62530000
-    m_LastClickedID: 21346
-    m_ExpandedIDs: 000000005a530000
+    m_SelectedIDs: 7c530000
+    m_LastClickedID: 21372
+    m_ExpandedIDs: 0000000076530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -970,7 +970,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005a530000
+    m_ExpandedIDs: 0000000076530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1084,7 +1084,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -62328
+  m_LastSelectedObjectID: 92866
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1498,16 +1498,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1130.4
+    x: 1166.4
     y: 73.6
-    width: 404.59998
+    width: 368.59998
     height: 701.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 2282
+    ID: 27545
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -1534,13 +1534,13 @@ MonoBehaviour:
   m_PlayModeTestListGUI:
     m_Window: {fileID: 25}
     m_NewResultList:
-    - id: 1000
-      uniqueId: '[It''s Raining Cubes][suite]'
-      name: It's Raining Cubes
-      fullName: It's Raining Cubes
-      resultStatus: 0
-      duration: 0
-      messages: 
+    - id: 1035
+      uniqueId: '[Hit''n''Run][suite]'
+      name: Hit'n'Run
+      fullName: Hit'n'Run
+      resultStatus: 2
+      duration: 1.7502658
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1550,14 +1550,13 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1014
-      uniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/Its Raining Cubes
-        2.0/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1068
+      uniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/HitNRun/Library/ScriptAssemblies/PlayMode.dll][suite]'
       name: PlayMode.dll
-      fullName: C:/AYUSH/Projects/Game Development/Its Raining Cubes 2.0/Library/ScriptAssemblies/PlayMode.dll
-      resultStatus: 0
-      duration: 0
-      messages: 
+      fullName: C:/AYUSH/Projects/Game Development/HitNRun/Library/ScriptAssemblies/PlayMode.dll
+      resultStatus: 2
+      duration: 1.5685768
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1565,32 +1564,32 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1000
-      parentUniqueId: '[It''s Raining Cubes][suite]'
+      parentId: 1035
+      parentUniqueId: '[Hit''n''Run][suite]'
     - id: 1002
       uniqueId: PlayMode.dll/[PlayMode][Stage1_Tests][suite]
       name: Stage1_Tests
       fullName: Stage1_Tests
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.1661126
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: The cube is the sole working tool for creation
+      description: Gear up! We're going in!
       isSuite: 1
       categories:
       - 1
       parentId: 1014
       parentUniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/Its Raining
         Cubes 2.0/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1003
-      uniqueId: PlayMode.dll/Stage1_Tests/[PlayMode][Stage1_Tests.ObjectCheck]
-      name: ObjectCheck
-      fullName: Stage1_Tests.ObjectCheck
-      resultStatus: 0
-      duration: 0
+    - id: 1038
+      uniqueId: PlayMode.dll/Stage1_Tests/[PlayMode][Stage1_Tests.CheckPlayerObjects]
+      name: CheckPlayerObjects
+      fullName: Stage1_Tests.CheckPlayerObjects
+      resultStatus: 1
+      duration: 0.0905008
       messages: 
       output: 
       stacktrace: 
@@ -1600,32 +1599,32 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - 1
-      parentId: 1002
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][Stage1_Tests][suite]
     - id: 1004
       uniqueId: PlayMode.dll/[PlayMode][Stage2_Tests][suite]
       name: Stage2_Tests
       fullName: Stage2_Tests
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.742764
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: I did not plan to make the Cube
+      description: Come on, come on. Chop-chop!
       isSuite: 1
       categories:
       - 2
       parentId: 1014
       parentUniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/Its Raining
         Cubes 2.0/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1006
-      uniqueId: PlayMode.dll/Stage2_Tests/[PlayMode][Stage2_Tests.CheckLimit]
-      name: CheckLimit
-      fullName: Stage2_Tests.CheckLimit
-      resultStatus: 0
-      duration: 0
+    - id: 1045
+      uniqueId: PlayMode.dll/Stage2_Tests/[PlayMode][Stage2_Tests.CameraFollowCheck]
+      name: CameraFollowCheck
+      fullName: Stage2_Tests.CameraFollowCheck
+      resultStatus: 1
+      duration: 1.3465676
       messages: 
       output: 
       stacktrace: 
@@ -1635,14 +1634,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - 2
-      parentId: 1004
+      parentId: 1039
       parentUniqueId: PlayMode.dll/[PlayMode][Stage2_Tests][suite]
-    - id: 1005
-      uniqueId: PlayMode.dll/Stage2_Tests/[PlayMode][Stage2_Tests.CheckMovement]
-      name: CheckMovement
-      fullName: Stage2_Tests.CheckMovement
-      resultStatus: 0
-      duration: 0
+    - id: 1043
+      uniqueId: PlayMode.dll/Stage2_Tests/[PlayMode][Stage2_Tests.CheckDownMovement]
+      name: CheckDownMovement
+      fullName: Stage2_Tests.CheckDownMovement
+      resultStatus: 1
+      duration: 0.0222897
       messages: 
       output: 
       stacktrace: 
@@ -1652,32 +1651,117 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - 2
-      parentId: 1004
+      parentId: 1039
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage2_Tests][suite]
+    - id: 1041
+      uniqueId: PlayMode.dll/Stage2_Tests/[PlayMode][Stage2_Tests.CheckLeftMovement]
+      name: CheckLeftMovement
+      fullName: Stage2_Tests.CheckLeftMovement
+      resultStatus: 1
+      duration: 0.0581838
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 2
+      parentId: 1039
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage2_Tests][suite]
+    - id: 1042
+      uniqueId: PlayMode.dll/Stage2_Tests/[PlayMode][Stage2_Tests.CheckRightMovement]
+      name: CheckRightMovement
+      fullName: Stage2_Tests.CheckRightMovement
+      resultStatus: 1
+      duration: 0.0213267
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 2
+      parentId: 1039
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage2_Tests][suite]
+    - id: 1044
+      uniqueId: PlayMode.dll/Stage2_Tests/[PlayMode][Stage2_Tests.CheckUpMovement]
+      name: CheckUpMovement
+      fullName: Stage2_Tests.CheckUpMovement
+      resultStatus: 1
+      duration: 0.0175868
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 2
+      parentId: 1039
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage2_Tests][suite]
+    - id: 1046
+      uniqueId: PlayMode.dll/Stage2_Tests/[PlayMode][Stage2_Tests.LookingTest]
+      name: LookingTest
+      fullName: Stage2_Tests.LookingTest
+      resultStatus: 1
+      duration: 0.2001866
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 2
+      parentId: 1039
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage2_Tests][suite]
+    - id: 1040
+      uniqueId: PlayMode.dll/Stage2_Tests/[PlayMode][Stage2_Tests.SetUp]
+      name: SetUp
+      fullName: Stage2_Tests.SetUp
+      resultStatus: 1
+      duration: 0.0597
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 2
+      parentId: 1039
       parentUniqueId: PlayMode.dll/[PlayMode][Stage2_Tests][suite]
     - id: 1007
       uniqueId: PlayMode.dll/[PlayMode][Stage3_Tests][suite]
       name: Stage3_Tests
       fullName: Stage3_Tests
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.187096
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: Want a sugar cube?
+      description: We're in the clear.
       isSuite: 1
       categories:
       - 3
       parentId: 1014
       parentUniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/Its Raining
         Cubes 2.0/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1008
-      uniqueId: PlayMode.dll/Stage3_Tests/[PlayMode][Stage3_Tests.CheckCorrectSpawn]
-      name: CheckCorrectSpawn
-      fullName: Stage3_Tests.CheckCorrectSpawn
-      resultStatus: 0
-      duration: 0
+    - id: 1048
+      uniqueId: PlayMode.dll/Stage3_Tests/[PlayMode][Stage3_Tests.Check]
+      name: Check
+      fullName: Stage3_Tests.Check
+      resultStatus: 1
+      duration: 1.1384661
       messages: 
       output: 
       stacktrace: 
@@ -1687,32 +1771,32 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - 3
-      parentId: 1007
+      parentId: 1047
       parentUniqueId: PlayMode.dll/[PlayMode][Stage3_Tests][suite]
     - id: 1009
       uniqueId: PlayMode.dll/[PlayMode][Stage4_Tests][suite]
       name: Stage4_Tests
       fullName: Stage4_Tests
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 4.9876704
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: The Cube is an imitation of life itself
+      description: Targets acquired.
       isSuite: 1
       categories:
       - 4
       parentId: 1014
       parentUniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/Its Raining
         Cubes 2.0/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1010
-      uniqueId: PlayMode.dll/Stage4_Tests/[PlayMode][Stage4_Tests.CheckDestroying]
-      name: CheckDestroying
-      fullName: Stage4_Tests.CheckDestroying
-      resultStatus: 0
-      duration: 0
+    - id: 1052
+      uniqueId: PlayMode.dll/Stage4_Tests/[PlayMode][Stage4_Tests.CheckCollisions]
+      name: CheckCollisions
+      fullName: Stage4_Tests.CheckCollisions
+      resultStatus: 1
+      duration: 0.3961866
       messages: 
       output: 
       stacktrace: 
@@ -1722,30 +1806,231 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - 4
-      parentId: 1009
+      parentId: 1049
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage4_Tests][suite]
+    - id: 1050
+      uniqueId: PlayMode.dll/Stage4_Tests/[PlayMode][Stage4_Tests.CheckEnemiesAndSpawn]
+      name: CheckEnemiesAndSpawn
+      fullName: Stage4_Tests.CheckEnemiesAndSpawn
+      resultStatus: 1
+      duration: 4.059676
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 4
+      parentId: 1049
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage4_Tests][suite]
+    - id: 1051
+      uniqueId: PlayMode.dll/Stage4_Tests/[PlayMode][Stage4_Tests.CheckEnemyMovement]
+      name: CheckEnemyMovement
+      fullName: Stage4_Tests.CheckEnemyMovement
+      resultStatus: 1
+      duration: 0.5252381
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 4
+      parentId: 1049
       parentUniqueId: PlayMode.dll/[PlayMode][Stage4_Tests][suite]
     - id: 1011
       uniqueId: PlayMode.dll/[PlayMode][Stage5_Tests][suite]
       name: Stage5_Tests
       fullName: Stage5_Tests
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.6088684
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: Platonic solid regular hexahedron
+      description: Hold your fire! Hold your fire!
       isSuite: 1
       categories:
       - 5
       parentId: 1014
       parentUniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/Its Raining
         Cubes 2.0/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1012
-      uniqueId: PlayMode.dll/Stage5_Tests/[PlayMode][Stage5_Tests.CheckCorrect]
-      name: CheckCorrect
-      fullName: Stage5_Tests.CheckCorrect
+    - id: 1056
+      uniqueId: PlayMode.dll/Stage5_Tests/[PlayMode][Stage5_Tests.CheckCollisions]
+      name: CheckCollisions
+      fullName: Stage5_Tests.CheckCollisions
+      resultStatus: 1
+      duration: 0.3183622
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 5
+      parentId: 1053
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage5_Tests][suite]
+    - id: 1055
+      uniqueId: PlayMode.dll/Stage5_Tests/[PlayMode][Stage5_Tests.CheckSpawnShotComponents]
+      name: CheckSpawnShotComponents
+      fullName: Stage5_Tests.CheckSpawnShotComponents
+      resultStatus: 1
+      duration: 0.2387143
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 5
+      parentId: 1053
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage5_Tests][suite]
+    - id: 1054
+      uniqueId: PlayMode.dll/Stage5_Tests/[PlayMode][Stage5_Tests.SetUp]
+      name: SetUp
+      fullName: Stage5_Tests.SetUp
+      resultStatus: 1
+      duration: 0.0409428
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 5
+      parentId: 1053
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage5_Tests][suite]
+    - id: 1057
+      uniqueId: PlayMode.dll/[PlayMode][Stage6_Tests][suite]
+      name: Stage6_Tests
+      fullName: Stage6_Tests
+      resultStatus: 2
+      duration: 1.5609868
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: Remember! This is bandit country.
+      isSuite: 1
+      categories:
+      - 6
+      parentId: 1068
+      parentUniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/HitNRun/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1059
+      uniqueId: PlayMode.dll/Stage6_Tests/[PlayMode][Stage6_Tests.CheckSpeedAndColorIncrease]
+      name: CheckSpeedAndColorIncrease
+      fullName: Stage6_Tests.CheckSpeedAndColorIncrease
+      resultStatus: 2
+      duration: 1.3645074
+      messages: Enemies are not moving to a player, or moving too slow
+      output: 
+      stacktrace: 'at Stage6_Tests+<CheckSpeedAndColorIncrease>d__1.MoveNext () [0x00113]
+        in C:\AYUSH\Projects\Game Development\HitNRun\Packages\TestsForHitNRun\Tests\PlayMode\Stage6_Tests.cs:48
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in C:\AYUSH\Projects\Game Development\HitNRun\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 6
+      parentId: 1057
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage6_Tests][suite]
+    - id: 1058
+      uniqueId: PlayMode.dll/Stage6_Tests/[PlayMode][Stage6_Tests.SetUp]
+      name: SetUp
+      fullName: Stage6_Tests.SetUp
+      resultStatus: 1
+      duration: 0.0994407
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 6
+      parentId: 1057
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage6_Tests][suite]
+    - id: 1060
+      uniqueId: PlayMode.dll/[PlayMode][Stage7_Tests][suite]
+      name: Stage7_Tests
+      fullName: Stage7_Tests
+      resultStatus: 2
+      duration: 0.0479828
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: Take the point! Affirmative.
+      isSuite: 1
+      categories:
+      - 7
+      parentId: 1068
+      parentUniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/HitNRun/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1061
+      uniqueId: PlayMode.dll/Stage7_Tests/[PlayMode][Stage7_Tests.Check]
+      name: Check
+      fullName: Stage7_Tests.Check
+      resultStatus: 2
+      duration: 0.0424479
+      messages: There is no canvas in scene named "Canvas"
+      output: 
+      stacktrace: 'at Stage7_Tests+<Check>d__2.MoveNext () [0x000f5] in C:\AYUSH\Projects\Game
+        Development\HitNRun\Packages\TestsForHitNRun\Tests\PlayMode\Stage7_Tests.cs:39
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in C:\AYUSH\Projects\Game Development\HitNRun\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 7
+      parentId: 1060
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage7_Tests][suite]
+    - id: 1062
+      uniqueId: PlayMode.dll/[PlayMode][Stage8_Tests][suite]
+      name: Stage8_Tests
+      fullName: Stage8_Tests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: Get Out Of There, It's Gonna Blow!
+      isSuite: 1
+      categories:
+      - 8
+      parentId: 1068
+      parentUniqueId: '[PlayMode][C:/AYUSH/Projects/Game Development/HitNRun/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1063
+      uniqueId: PlayMode.dll/Stage8_Tests/[PlayMode][Stage8_Tests.Check]
+      name: Check
+      fullName: Stage8_Tests.Check
       resultStatus: 0
       duration: 0
       messages: 
@@ -1756,13 +2041,13 @@ MonoBehaviour:
       description: 
       isSuite: 0
       categories:
-      - 5
-      parentId: 1011
-      parentUniqueId: PlayMode.dll/[PlayMode][Stage5_Tests][suite]
-    - id: 1013
-      uniqueId: PlayMode.dll/Stage5_Tests/[PlayMode][Stage5_Tests.CheckScoreChanging]
-      name: CheckScoreChanging
-      fullName: Stage5_Tests.CheckScoreChanging
+      - 8
+      parentId: 1062
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage8_Tests][suite]
+    - id: 1067
+      uniqueId: PlayMode.dll/Stage8_Tests/[PlayMode][Stage8_Tests.CheckChangingPlayerPrefs]
+      name: CheckChangingPlayerPrefs
+      fullName: Stage8_Tests.CheckChangingPlayerPrefs
       resultStatus: 0
       duration: 0
       messages: 
@@ -1773,16 +2058,74 @@ MonoBehaviour:
       description: 
       isSuite: 0
       categories:
-      - 5
-      parentId: 1011
-      parentUniqueId: PlayMode.dll/[PlayMode][Stage5_Tests][suite]
-    m_ResultText: 
+      - 8
+      parentId: 1062
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage8_Tests][suite]
+    - id: 1065
+      uniqueId: PlayMode.dll/Stage8_Tests/[PlayMode][Stage8_Tests.CheckGameReload]
+      name: CheckGameReload
+      fullName: Stage8_Tests.CheckGameReload
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 8
+      parentId: 1062
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage8_Tests][suite]
+    - id: 1064
+      uniqueId: PlayMode.dll/Stage8_Tests/[PlayMode][Stage8_Tests.CheckGameTab]
+      name: CheckGameTab
+      fullName: Stage8_Tests.CheckGameTab
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 8
+      parentId: 1062
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage8_Tests][suite]
+    - id: 1066
+      uniqueId: PlayMode.dll/Stage8_Tests/[PlayMode][Stage8_Tests.CheckMenuPlay]
+      name: CheckMenuPlay
+      fullName: Stage8_Tests.CheckMenuPlay
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - 8
+      parentId: 1062
+      parentUniqueId: PlayMode.dll/[PlayMode][Stage8_Tests][suite]
+    m_ResultText: 'Stage6_Tests (1.561s)
+
+      Remember! This is bandit country.
+
+      ---
+
+      One
+      or more child tests had errors'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 5a96b5b34bbfd8b946b0d2cb64d31de4f1cf24ee692231172155ea34ffffff7f
+      m_SelectedIDs: 553c4e2f
+      m_LastClickedID: 793656405
+      m_ExpandedIDs: 5a96b5b34bbfd8b946b0d2cb64d31de4f1cf24eedcbf33f850ed3afc69223117553c4e2f2155ea34cf84bf7affffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1812,15 +2155,18 @@ MonoBehaviour:
       - 3
       - 4
       - 5
+      - 6
+      - 7
+      - 8
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
     m_Window: {fileID: 25}
     m_NewResultList:
-    - id: 1016
-      uniqueId: '[It''s Raining Cubes][suite]'
-      name: It's Raining Cubes
-      fullName: It's Raining Cubes
+    - id: 1070
+      uniqueId: '[Hit''n''Run][suite]'
+      name: Hit'n'Run
+      fullName: Hit'n'Run
       resultStatus: 0
       duration: 0
       messages: 
@@ -1839,7 +2185,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f1cf24eeffffff7f
+      m_ExpandedIDs: f1cf24eedcbf33f8ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

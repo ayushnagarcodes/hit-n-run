@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 28613
+  controlID: 2173
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -86,7 +86,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 28614
+  controlID: 2174
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 28615
+  controlID: 2175
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -475,9 +475,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.5292454, y: -1.4782403, z: -0.16384137}
+    m_Target: {x: 64.87476, y: 723.4733, z: -8.050461}
     speed: 2
-    m_Value: {x: -6.5292454, y: -1.4782403, z: -0.16384137}
+    m_Value: {x: 103.261566, y: 716.1633, z: -7.673339}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -528,9 +528,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 19.925798
+    m_Target: 875.75757
     speed: 2
-    m_Value: 19.925798
+    m_Value: 838.04553
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -657,23 +657,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: ac51fdff5052fdff8a52fdffce59fdff725afdffac5afdffd661fdff7862fdffb262fdfff469fdffa06afdffd46afdff966cfdffc06cfdfffa6cfdff3c74fdff6c86fdffa686fdff7c8dfdff7493fdffa893fdffb69afdffb69cfdffea9cfdff8ca3fdff84a6fdffb8a6fdff5aadfdffeeadfdff22aefdff1ab5fdffaeb5fdffe2b5fdffa4b7fdffc8b7fdfffcb7fdffbeb9fdffe2b9fdff16bafdffd8bbfdfffcbbfdff30bcfdff3ebdfdff62bdfdff96bdfdffa4befdffc8befdfffcbefdff3ec0fdff62c0fdff96c0fdffc4c2fdffeec2fdff28c3fdff52cafdff7ccafdffb6cafdff4cd2fdff9ad5fdffd4d5fdffaadcfdff44dffdff78dffdff1ae6fdffaee6fdffe2e6fdff16eefdff46eefdff7aeefdff3cf0fdffecf0fdff20f1fdffe2f2fdff06f3fdff3af3fdfffcf4fdff20f5fdff54f5fdff40fcfdff64fcfdff98fcfdff4603feff6a03feff9e03feff400afeffd60afeff0a0bfeffac11feffd011feff0412feffc613fefff013feff2a14feff001bfeff222dfeff5c2dfeff3e34feff6834feffa234feff7a3bfeff9e3cfeffd23cfefffa43feff9444feffce44feff644cfeffe84efeff224ffeff4c56feff4a57feff8457feffae5efeffac63feffe663feff106bfeff7c6cfeffb66cfeff4c74feff1075feff4a75feff747cfeff1c87feff5087feffea8dfeffb08efeffea8efeff0496feff9296feffcc96feffe69dfeffea9efeff1e9ffeffc0a5feffeaa5feff24a6feff30abfeff5aabfeff94abfeff6ab2feff94b2feffceb2feffa4b9feffceb9feff08bafeff14bffeffc6bffeff00c0feff2ac7feff54c7feff8ec7feffb8cefeff68d0feff9cd0feff0ad8feff2ed8feff62d8feff4edffeff6ce0feffa0e0feff8ce7feffb0e7feffe4e7feff10edfeff34edfeff68edfeff94f2feffb8f2feffecf2feffd8f9feff50fefeff8afefeffe4fffeff0a00ffff4400ffffbe02ffffe402ffff1e03ffff2a05ffff5005ffff8a05ffffe206ffff0e07ffff4807ffff620effff2e10ffff7810ffff0218ffff4418ffff8e18ffff3020ffff8624ffffd024ffff122cffff522cffff9c2cffffea33ffffb235fffffa35ffff7a36fffff236ffff3c37ffff563fffff2040ffff6a40ffff0c48ffff4c48ffff9648ffff3850ffff0451ffff4e51fffff058ffff3459ffff7e59ffff1461ffff9862ffffe262ffffe46affff2a6bffff746bffff8273ffffc273ffff0c74ffffae7bffffea7cffff347dffff3685fffffc85ffff4686ffff948dffff129affff5c9affffa0a1ffffa4a2ffffeea2fffffcaaffff42abffff8cabffff8eb3ffffceb3ffff18b4ffffb0bbffffa2beffffe8beffff6ac6ffffbac9ffff00caffff82d1ffff04dbffff3cdeffff86deffffeae5ffff52eaffff8ceaffffaef1ffff20fbffff
+      m_SelectedIDs: d4c2ffff
+      m_LastClickedID: -15660
+      m_ExpandedIDs: cac2fffffac2ffff32c3ffff40caffff68caffffa0caffff70d1ffff0ad2ffff42d2fffffad8ffffb6d9ffffeed9ffffa6e0ffff62e1ffff9ae1ffffb2e8ffff22eaffff5aeaffff72f1ffffe0f2ffff1af3ffffe4f9ffff28fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Score
+        m_OriginalName: Score
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -15660
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 28606
+  controlID: 2196
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -775,22 +775,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\AYUSH\Projects\Game Development\HitNRun
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c530000
-    m_LastClickedID: 21372
-    m_ExpandedIDs: 0000000076530000
+    m_SelectedIDs: 7a530000
+    m_LastClickedID: 21370
+    m_ExpandedIDs: 0000000070530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -818,7 +818,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000076530000
+    m_ExpandedIDs: 0000000070530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -843,10 +843,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: d4c2ffff
+    m_LastClickedInstanceID: -15660
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000
+    m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1412,7 +1412,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 27545
+    ID: 771
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -1444,7 +1444,7 @@ MonoBehaviour:
       name: Hit'n'Run
       fullName: Hit'n'Run
       resultStatus: 2
-      duration: 1.7502658
+      duration: 10.885561
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1460,7 +1460,7 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: C:/AYUSH/Projects/Game Development/HitNRun/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 2
-      duration: 1.5685768
+      duration: 10.77217
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1752,7 +1752,7 @@ MonoBehaviour:
       name: Stage5_Tests
       fullName: Stage5_Tests
       resultStatus: 1
-      duration: 0.6088684
+      duration: 0.5941031
       messages: 
       output: 
       stacktrace: 
@@ -1770,7 +1770,7 @@ MonoBehaviour:
       name: CheckCollisions
       fullName: Stage5_Tests.CheckCollisions
       resultStatus: 1
-      duration: 0.3183622
+      duration: 0.3160309
       messages: 
       output: 
       stacktrace: 
@@ -1787,7 +1787,7 @@ MonoBehaviour:
       name: CheckSpawnShotComponents
       fullName: Stage5_Tests.CheckSpawnShotComponents
       resultStatus: 1
-      duration: 0.2387143
+      duration: 0.2326781
       messages: 
       output: 
       stacktrace: 
@@ -1821,7 +1821,7 @@ MonoBehaviour:
       name: Stage6_Tests
       fullName: Stage6_Tests
       resultStatus: 2
-      duration: 1.5609868
+      duration: 1.3881037
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1838,7 +1838,7 @@ MonoBehaviour:
       name: CheckSpeedAndColorIncrease
       fullName: Stage6_Tests.CheckSpeedAndColorIncrease
       resultStatus: 2
-      duration: 1.3645074
+      duration: 1.3478789
       messages: Enemies are not moving to a player, or moving too slow
       output: 
       stacktrace: 'at Stage6_Tests+<CheckSpeedAndColorIncrease>d__1.MoveNext () [0x00113]
@@ -1862,7 +1862,7 @@ MonoBehaviour:
       name: SetUp
       fullName: Stage6_Tests.SetUp
       resultStatus: 1
-      duration: 0.0994407
+      duration: 0.0373455
       messages: 
       output: 
       stacktrace: 
@@ -2017,7 +2017,7 @@ MonoBehaviour:
       - 8
       parentId: 1062
       parentUniqueId: PlayMode.dll/[PlayMode][Stage8_Tests][suite]
-    m_ResultText: 'Stage6_Tests (1.561s)
+    m_ResultText: 'Stage6_Tests (1.388s)
 
       Remember! This is bandit country.
 

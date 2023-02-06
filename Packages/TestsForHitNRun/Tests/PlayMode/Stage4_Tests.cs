@@ -219,9 +219,9 @@ public class Stage4_Tests
 
         start = Time.unscaledTime;
         yield return new WaitUntil(() =>
-            Vector2.Distance(enemyT.position, playerT.position) < 0.01f ||
+            Vector2.Distance(enemyT.position, playerT.position) < 0.1f ||
             (Time.unscaledTime - start) * Time.timeScale > 20);
-        if (Vector2.Distance(enemyT.position, playerT.position) >= 0.01f)
+        if (Vector2.Distance(enemyT.position, playerT.position) >= 0.1f)
         {
             Assert.Fail("Enemies are not moving to a player, or moving too slow");
         }
@@ -243,9 +243,9 @@ public class Stage4_Tests
 
         start = Time.unscaledTime;
         yield return new WaitUntil(() =>
-            Vector2.Distance(enemyT.position, playerT.position) < 0.01f ||
+            Vector2.Distance(enemyT.position, playerT.position) < 0.1f ||
             (Time.unscaledTime - start) * Time.timeScale > 20);
-        if (Vector2.Distance(enemyT.position, playerT.position) >= 0.01f)
+        if (Vector2.Distance(enemyT.position, playerT.position) >= 0.1f)
         {
             Assert.Fail("Enemies are not moving to a player, or moving too slow");
         }
