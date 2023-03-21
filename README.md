@@ -3,7 +3,7 @@
 - Feels like a 90s console game (thanks to unity's inbuilt post processing package).
 - You can play the game:
   - In browser (click [here](https://ayushnagarcodes.github.io/HitNRun/))
-  - By installing the executable (only available for windows 64-bit) (click [here](https://github.com/ayushnagarcodes/HitNRun/raw/main/Hit'N'Run%20Setup%20(x64).exe))
+  - By installing the executable (only available for windows 64-bit) (click [here](https://github.com/ayushnagarcodes/HitNRun/raw/main/Hit'N'Run%20Setup%20(x64).exe) or download the .exe from above)
 - Features:
   - UI screen when the game starts. Click on "Play" to enjoy the game or "Exit" to quit.
   - Hit enemies with bullets (point your mouse cursor in the enemy direction and shoot with left mouse button).
